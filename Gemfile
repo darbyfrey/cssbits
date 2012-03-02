@@ -10,7 +10,7 @@ group :production, :staging do
 end
 
 gem "twitter-bootstrap-rails"
-gem "mini_token"
+gem "uniquify"
 
 # Gems used only for assets and not required
 # in production environments by default.
