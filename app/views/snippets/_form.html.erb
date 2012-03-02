@@ -1,0 +1,20 @@
+<%= form_for(@snippet) do |f| %>
+  <div class="inputer">
+    <h3>HTML</h3>
+    <%= f.text_area :html, :id => 'html_input' %>
+  </div>
+  <div class="inputer">
+    <h3>CSS</h3>
+    <%= f.text_area :css, :id => 'css_input' %>
+  </div>
+  <div style="clear:both;"></div>
+  <div>
+    <h3>Output</h3>
+    <iframe id="output" style="width:600px;height:400px;border:1px solid #ccc" frameborder="0"></iframe>
+  </div>
+  <% if @snippet.new_record? %>
+  <div>
+    <%= f.submit 'Save CSS Bit', :class => 'btn btn-primary btn-large' %>
+  </div>
+  <% end %>
+<% end %>
