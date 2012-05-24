@@ -16,13 +16,19 @@
 // Example:
 // @linkColor: #ff0000;
 
-@btnPrimaryBackground: #46A5E5;
-@btnPrimaryBackgroundHighlight:#46A5E5; 
+@btnPrimaryBackground: @green;
+@btnPrimaryBackgroundHighlight:@green; 
 @navbarLinkColor:@white;
+@heroUnitBackground:@white;
 
+.title {
+	text-align: center;
+	padding-top:20px;
+}
 
 .brand {
-	font-family: DymaxionScript;
+	font-family: Pacifico;
+	font-size: 15px;
 }
 
 .content {
@@ -47,6 +53,14 @@ textarea {
 	margin:0 200px;
 }
 
+.signin-form {
+	margin:10px 420px;
+}
+
+.signup-form {
+	margin:10px 420px;
+}
+
 .hero-unit {
   padding-top: 20px;
 	-moz-box-shadow: 10px 10px 5px #888;
@@ -56,4 +70,12 @@ textarea {
 
 .right {
   float: right;
+}
+
+.submit-btn {
+	float:right;
+}
+
+.links {
+
 }

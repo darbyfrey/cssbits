@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="/">CSS Bits</a>
+      <a class="brand" href="/"><strong>.CSS</strong> Bits</a>
       <ul class="nav pull-right">
       <% if user_signed_in? %>  
         <li><a>Signed in as <%= current_user.email %> </a></li>
@@ -18,10 +18,10 @@
           <li class="divider"></li>
           <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>  
       <% else %>      
+            <li><a href="/users/sign_up" class="btn btn-info">Sign Up</a></li>
             <li class="divider-vertical"></li>
-            <li><a href="/users/sign_up" class="btn btn-primary">Sign Up</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="/users/sign_in" class="btn btn-primary">Sign In</a></li>
+            <li><a href="/users/sign_in" class="btn btn-info">Sign In</a></li>
+            
           </ul>
         </li>
       <% end %>
